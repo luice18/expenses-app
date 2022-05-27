@@ -9,6 +9,7 @@ import Transaction from './components/transaction'
 import values from '../../constants/values'
 import { categories, transactions } from '../../constants/data'
 
+
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -25,6 +26,9 @@ const HomeScreen = () => {
             <Spacer height={20} />
 
         </View>
+        <View>
+
+        </View>
         <View style={{paddingLeft: values.horizontalPadding}}>
             <FlatList
                 horizontal
@@ -34,6 +38,8 @@ const HomeScreen = () => {
                 renderItem={({ item }) => <Category category={item} onPress={(val) => console.warn(`Clicked ${val}`)} />}
             />
         </View>
+
+       
 
         <View style={styles.horizontalPaddingView}>
             <Spacer height={20} />

@@ -11,6 +11,7 @@ const Greeter = ({user}) => {
       </View>
       <Image style={styles.image} source={{uri: user.img}}/>
     </View>
+    
   )
 }
 
